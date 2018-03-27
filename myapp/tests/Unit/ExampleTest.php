@@ -17,4 +17,14 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    /**
+     * Test if array has one item.
+     *
+     * @return void
+     */
+    public function testCountArrayOfOneItem()
+    {
+        $this->assertCount(1, ['"I am the only one item"']);
+    }
 }
